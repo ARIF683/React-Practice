@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useDebugValue } from "react";
 import './App.css';
 
 function App() {
@@ -9,26 +9,43 @@ function App() {
   )
 }
 const Header = () => {
-  const [api, setApi ] = useState([]);
-  
-  const Head = async  () => {
-    const res = await fetch('https://api.github.com/users')
-    setApi(await res.json())
+  const [modal, setModal ] = useState(false)
+  const [name, setName] = useState("")
+  const [person, setPerson] = useState([])
+  const Head = (e) => {
+    e.preventDefault();
+    if(name) {
+      setPerson([...person, name])
+      setName("")
+    }
+    else {
+      setModal(true)
+      setTimeout(() => {
+        setModal(false)
+
+      }, 2000)
+    }
   }
-  useEffect(() => {
-    Head() 
-  })
   return (
     <>
-    {api.map((person) => {
+    {modal && <Modal /> }
+    <form >
+      <input name = "name" value = {name} onChange = {(e) => setName(e.target.value)} /> 
+    </form>
+    <button type = "submit"  onClick = {Head}>Submit </button>
+    {person.map((peros) => {
       return (
-        <>
-        <h1>{person.login}</h1>
-        <img src = {person.avatar_url}></img>
-        </> 
+       <h1>{peros}</h1>
       )
     })}
     </> 
   )
 }
-export default App;
+const Modal = () => {
+  return (
+    <>
+    <h3> Plss Add Your Name And Email </h3> 
+    </> 
+  )
+}
+export default App; 
