@@ -8,20 +8,6 @@ function App() {
     </>
   )
 }
-const Header = () => {
-  const [modal, setModal ] = useState(false)
-  const [name, setName] = useState("")
-  const [person, setPerson] = useState([])
-  const Head = (e) => {
-    e.preventDefault();
-    if(name) {
-      setPerson([...person, name])
-      setName("")
-    }
-    else {
-      setModal(true)
-      setTimeout(() => {
-        setModal(false)
 
       }, 2000)
     }
