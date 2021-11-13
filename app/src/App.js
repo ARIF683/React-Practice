@@ -7,7 +7,7 @@ function App() {
       <Header />
     </>
   )
-}
+  }
 const Modal = ({ modalContent, removeModal  }) => {
   useEffect(() => {
     setTimeout(() => {
