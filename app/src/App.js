@@ -1,10 +1,10 @@
 import { useState, useEffect, useReducer } from "react";
 import './App.css';
-import FormMultipleInput from "./Tutorial/FormMutlipleInput";
+import ComplexCounter from "./Tutorial/ComplexCount";
 function App() {
   return (
     <>
-      <FormMultipleInput />
+      <ComplexCounter />
     </>
   )
 }
