@@ -1,10 +1,12 @@
 import { useState, useEffect, useReducer } from "react";
 import './App.css';
-import ComplexCounter from "./Tutorial/ComplexCount";
+import UseStateRemoveTitle    from "./Tutorial/UseStateRemoveTitle";
+
+
 function App() {
   return (
     <>
-      <ComplexCounter />
+      <UseStateRemoveTitle  />
     </>
   )
 }
