@@ -1,12 +1,12 @@
 import { useState, useEffect, useReducer } from "react";
 import './App.css';
-import UseStateRemoveTitle    from "./Tutorial/UseStateRemoveTitle";
+import UseContext   from "./Tutorial/UseContext";
 
 
 function App() {
   return (
     <>
-      <UseStateRemoveTitle  />
+      <UseContext  />
     </>
   )
 }
