@@ -1,12 +1,12 @@
 import { useState, useEffect, useReducer } from "react";
 import './App.css';
-import UseContext   from "./Tutorial/UseContext";
+import UseContext2  from "./Tutorial/UseContext2";
 
 
 function App() {
   return (
     <>
-      <UseContext  />
+      <UseContext2 />
     </>
   )
 }
