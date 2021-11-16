@@ -1,13 +1,11 @@
-import { useState, useEffect, useReducer } from "react";
+import React from "react";
 import './App.css';
-import UseContext2  from "./Tutorial/UseContext2";
 
+import ReactRouter from "./Tutorial/Router/ReactRouter";
 
 function App() {
   return (
-    <>
-      <UseContext2 />
-    </>
+  <ReactRouter /> 
   )
 }
 
