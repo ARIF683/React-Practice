@@ -1,9 +1,10 @@
+
 import React from "react";
-import { Link, BrowserRouter } from "react-router-dom";
+import { Link, BrowserRouter, NavLink  } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <BrowserRouter>
+        <>
                 <nav>
                     <Link to="/" >HOME </Link>
                 </nav>
@@ -16,7 +17,7 @@ const Navbar = () => {
                         PEOPLE
                     </Link>
                 </nav>
-        </BrowserRouter>
+                </> 
     )
 }
 export default Navbar;

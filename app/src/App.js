@@ -5,7 +5,9 @@ import ReactRouter from "./Tutorial/Router/ReactRouter";
 
 function App() {
   return (
+    <>
   <ReactRouter /> 
+  </> 
   )
 }
 

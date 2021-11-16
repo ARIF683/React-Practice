@@ -10,14 +10,14 @@ import Navbar from "./Navbar";
 const ReactRouter = () => {
     return (
         <BrowserRouter>
-            <Navbar />
-
+            
+           <Navbar />
             <Routes>
 
-                <Route exact path="/" element={<Home />} />
-                <Route exact path="/about" element={<About />} />
+                <Route  path="/"  element={<Home />} />
+                <Route  path="/about" element={<About />} />
                 <Route path="/people" element={<People />} />
-                <Route path="*" element={<Error />} />
+                <Route path = "*" element = { <Error />} />
             </Routes>
         </BrowserRouter>
 
