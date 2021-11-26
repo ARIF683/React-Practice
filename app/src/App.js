@@ -1,13 +1,13 @@
 import React from "react";
 import './App.css';
 
-import ReactRouter from "./Tutorial/Router/ReactRouter";
+import Project3  from "./Project/Project3";
 
 function App() {
   return (
     <>
-  <ReactRouter /> 
-  </> 
+      <Project3 />
+    </>
   )
 }
 
