@@ -52,7 +52,7 @@ const Header = () => {
   const Left = () => {
     setIndex((index) => {
       let newIndex = index - 1;
-       return checkNumber(newIndex);
+      return checkNumber(newIndex);
     });
   };
   const Right = () => {
