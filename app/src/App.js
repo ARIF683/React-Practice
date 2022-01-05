@@ -1,12 +1,12 @@
 import React from "react";
 import './App.css';
 
-import Project5Clone1  from "./Project/Project5Clone1";
+import Project7   from "./Project/Project7";
 
 function App() {
   return (
     <>
-      <Project5Clone1 />
+      <Project7   />
     </>
   )
 }

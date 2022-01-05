@@ -1,26 +1,26 @@
 import { useState } from "react";
-import {AiOutlineMinus, AiOutlinePlus} from "react-icons/ai";
+import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
 const Project3 = () => {
-   const [question, setQuestion] = useState(questions)
-   return (
-       <>
-       {question.map((question) => {
-           return (
-             <SingleQuestion {...question} />
-           )
-       })}
-       </>
-   )
+  const [question, setQuestion] = useState(questions)
+  return (
+    <>
+      {question.map((question) => {
+        return (
+          <SingleQuestion {...question} />
+        )
+      })}
+    </> 
+  )
 }
 
-const SingleQuestion = ({title, info} )=> {
+const SingleQuestion = ({ title, info }) => {
   const [infos, setInfos] = useState(false)
   return (
     <>
-    <h2>{title}</h2>
-    <button onClick = {() => setInfos(!infos)}>{infos  ? <AiOutlineMinus /> : <AiOutlinePlus />}</button>
-    <h4>{infos && info } </h4>
+      <h2>{title}</h2>
+      <button onClick={() => setInfos(!infos)}>{infos ? <AiOutlineMinus /> : <AiOutlinePlus />}</button>
+      <h4>{infos && info} </h4>
     </>
   )
 }
