@@ -131,7 +131,7 @@ p {
                                                                                                                                                                                           ===============
                                                                                                                                                                                           */
 
-/* 
+
 .title {
   text-align: center;
   margin-bottom: 2rem;
@@ -247,11 +247,14 @@ article.lastSlide {
 article.nextSlide {
   transform: translateX(100%);
 }
-*/
+
+/* 
 .container {
   text-align: center;
-  /*display: flex;
-  align-items: center;*/
+
+ display: flex;
+  align-items: center;
+  
   height: 100px;
   padding-left: 2rem;
 }
@@ -332,3 +335,5 @@ input.error {
   font-size: 0.85rem;
   margin-top: 0.5rem;
 }
+ 
+*/ 

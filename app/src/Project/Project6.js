@@ -21,7 +21,7 @@ useEffect(() => {
 }, [])
 if (loading) {
    return (
-      <h2>Laoding...</h2>
+      <h2>Loading...</h2>
    )
 }
 const { id, title, dates, duties, company } = job[value]
